@@ -1,0 +1,30 @@
+<html>
+<script>
+function posneg()
+{    
+a=parseInt(document.getElementById("t1").value)
+b=parseInt(document.getElementById("y1").value)
+c=parseInt(document.getElementById("z1").value)
+if(a>b && a>c)
+{
+Ans = a+"is the biggest number"
+}
+else if(b>c && b>a)
+{
+Ans = b+"is the biggest number"
+}
+else
+{    
+Ans=c+"is the biggest number"
+}
+document.getElementById("a1").innerHTML=Ans
+}
+</script>
+<center>
+A=<input type="text" id="t1" placeholder="Number1"><br><br>
+B=<input type="text" id="y1" placeholder="Number2"><br><br>
+C=<input type="text" id="z1" placeholder="Number3"><br><br>
+<input type="button" value="ANSWER" onclick="posneg()">
+<p id="a1"></p>
+</center>
+</html>
